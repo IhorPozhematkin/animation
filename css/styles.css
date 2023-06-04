@@ -241,17 +241,13 @@ input {
     opacity: 0%;
   }
 }
-.item-skills:hover .icon-skills {
-  animation: animate-icon 500ms linear 1 0.5ms forwards;
-}
+.item-skills:hover .icon-skills,
 .item-skills:focus .icon-skills {
-  animation: animate-icon 500ms linear 1 0.5ms forwards;
+  animation: animate-icon 500ms linear 1 250ms forwards;
 }
-.item-skills:hover .image-back {
-  animation: animate-image 500ms linear 1 0.5ms forwards;
-}
+.item-skills:hover .image-back,
 .item-skills:focus .image-back {
-  animation: animate-image 500ms linear 1 0.5ms forwards;
+  animation: animate-image 500ms linear 1 250ms forwards;
 }
 .background-image {
   max-width: 100%;
