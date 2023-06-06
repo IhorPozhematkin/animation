@@ -196,8 +196,8 @@ input {
 }
 .item-skills {
   width: calc((100% - 3 * 24px) / 4);
+  position: relative;
 }
-
 .background-image {
   max-width: 100%;
   height: 112px;
@@ -206,9 +206,6 @@ input {
   border-radius: 4px;
   margin-bottom: 8px;
   overflow: hidden;
-  position: relative;
-}
-.image-back {
   transition: opacity 500ms linear 250ms;
 }
 .icon-skills {
@@ -227,15 +224,14 @@ input {
   opacity: 1;
   transform: rotate(360deg);
 }
-.item-skills:hover .image-back,
-.item-skills:focus .image-back {
+.item-skills:hover .background-image,
+.item-skills:focus .background-image {
   opacity: 0;
 }
 .item-skills:hover .svg-skills,
 .item-skills:focus .svg-skills {
   transform: scale(1);
 }
-
 .titlethree-skills {
   font-weight: 500;
   font-size: 20px;
