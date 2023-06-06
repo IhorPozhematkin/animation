@@ -213,24 +213,18 @@ input {
   top: 24px;
   left: 100px;
   opacity: 0;
+  transform: rotate(0deg) scale(0);
   transition: opacity 500ms linear 250ms, transform 500ms linear 250ms;
 }
-.svg-skills {
-  transition: transform 500ms linear 250ms;
-  transform: scale(0);
-}
+
 .item-skills:hover .icon-skills,
 .item-skills:focus .icon-skills {
   opacity: 1;
-  transform: rotate(360deg);
+  transform: rotate(360deg) scale(1);
 }
 .item-skills:hover .background-image,
 .item-skills:focus .background-image {
   opacity: 0;
-}
-.item-skills:hover .svg-skills,
-.item-skills:focus .svg-skills {
-  transform: scale(1);
 }
 .titlethree-skills {
   font-weight: 500;
